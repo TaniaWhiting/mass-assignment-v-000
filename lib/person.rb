@@ -14,5 +14,5 @@ class Person
       :pant_width
       
   def initialize(attributes)
-    att
+    attributes.each {|key, value| self.send(("#{key}="), value)}
 end
